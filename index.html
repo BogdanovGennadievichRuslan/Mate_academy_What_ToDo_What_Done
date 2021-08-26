@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <input class="new-todo" placeholder="What needs to be done?" autofocus="">
+        </header>
+        <section class="main" style="display: block;">
+            <input id="toggle-all" class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+            <ul class="todo-list">
+                <li data-id="1623229982565" class="todo-item completed">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>HTML</label>
+                        <button class="destroy">
+                        </button>
+                    </div>
+                </li>
+                <li data-id="1623229977505" class="todo-item">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>CSS</label>
+                        <button class="destroy"></button>
+                    </div>
+                </li>
+                <li data-id="1623229973162" class="todo-item">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>JavaScript</label>
+                        <button class="destroy"></button>
+                    </div>
+                </li>
+                <li data-id="1623229973161" class="todo-item">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>Node.js</label>
+                        <button class="destroy"></button>
+                    </div>
+                </li>
+                <li data-id="1623229973164" class="todo-item">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>React</label>
+                        <button class="destroy"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer" style="display: block;">
+            <span class="todo-count"><strong>3</strong> items left</span>
+            <ul class="filters">
+                <li>
+                    <a href="#/" class="selected" data-filter="all">All</a>
+                </li>
+                <li>
+                    <a href="#/active" data-filter="active">Active</a>
+                </li>
+                <li>
+                    <a href="#/completed" data-filter="completed">Completed</a>
+                </li>
+            </ul>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
